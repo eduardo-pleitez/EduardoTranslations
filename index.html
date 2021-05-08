@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eduardo Translations</title>
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/deb1522366.js" crossorigin="anonymous"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="topBar">
+    <div class="row left">
+      <a href="index.html" class="webName" role="button" tabindex="0">Eduardo Translations</a>
+    </div>
+    <div class="row center">
+      <div class="dropdown" role="button" tabindex="0">
+        <button type="button" class="dropdownButton" id="changeServicesButton">Services
+        <i class="arrow-down"></i></button>
+        <div class="dropdownContainer">
+          <a href="Sections/translation.html">Translation</a>
+          <a href="Sections/transcription.html">Transcription</a>
+          <a href="Sections/interpretation.html">Interpretation</a>
+        </div> 
+      </div>
+      <a href="#languagePairsSection" class="individual">Language Pairs</a>
+      <div class="dropdown" role="button" tabindex="0">
+        <button type="button" class="dropdownButton">Industries  <i class="arrow-down"></i></button>
+        <div class="dropdownContainer">
+          <a href="Sections/finance.html">Finance</a>
+          <a href="Sections/medical.html">Medical</a>
+          <a href="Sections/marketing.html">Marketing</a>
+        </div>
+      </div>
+      <a href="#aboutUsSection" class="individual">About Us</a>
+      <a href="#contactUsSection" class="individual">Contact Us</a>
+    </div>
+    <div class="row right">
+      <!--<a href="#">
+      <button type="button" class="languageButton" id="languageChange" onclick="changeLanguage()" title="Es">En</button>
+      </a> -->
+    </div>
+  </nav>
+
+  <!-- Main Page -->
+  <main class="mainPage">
+   <h1>Your Spanish Service Provider </h1>
+  </main>
+
+  <!-- Services Section -->
+  <section class="servicesSection">
+    <h1 class="servicesTitle">Our services</h1>
+    <div class="servicesTabs">
+      <div class="tab">
+        <h2 class="tabTitle">Translation</h2>
+        <p class="tabParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eos minus, 
+          nulla voluptate non necessitatibus perferendis dolorem. Quasi natus voluptas quisquam nostrum magni,
+          ab consequuntur, ex quod, unde voluptatibus dolorum?</p>
+      </div>
+      <div class="tab">
+        <h2 class="tabTitle">Transcription</h2>
+        <p class="tabParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eos minus, 
+          nulla voluptate non necessitatibus perferendis dolorem. Quasi natus voluptas quisquam nostrum magni, ab consequuntur, ex quod, unde voluptatibus dolorum?</p>
+      </div>
+      <div class="tab">
+        <h2 class="tabTitle">Interpretation</h2>
+        <p class="tabParagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora eos minus, 
+          nulla voluptate non necessitatibus perferendis dolorem. Quasi natus voluptas quisquam nostrum magni, ab consequuntur, ex quod, unde voluptatibus dolorum?</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Language Pairs Section -->
+  <section id="languagePairsSection">
+    <h1 class="languagePairsTitle">Language Pairs</h1>
+    <p style="text-align: center;">We specialized in Spanish language localization and we offer our services in the following language pairs:</p>
+    <div class="languagePairsRow">
+      <div class="flagLine"><img src="Images/gb.png" alt="English Flag"><span>></span><img src="Images/es.png" alt="Spanish Flag"></div>
+      <div class="flagLine"><img src="Images/fr.png" alt="French Flag"><span>></span><img src="Images/es.png" alt="Spanish
+      Flag"></div>
+      <div class="flagLine"><img src="Images/de.png" alt="German Flag"><span>></span><img src="Images/es.png" alt="Spanish
+        Flag"></div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industriesSection">
+    <h1 class="industriesTitle">Industries</h1>
+    <div class="industriesTags">
+        <div><i class="fas fa-file-invoice-dollar"></i><h2>Finance</h2></div>
+        <div><i class="fas fa-stethoscope"></i><h2>Medical</h2></div>
+        <div><i class="fas fa-ad"></i><h2>Marketing</h2></div>
+    </div>
+  </section>
+  
+  <!-- About Us Section -->
+  <section id="aboutUsSection">
+    <div class="aboutUsSection-left">
+      <img src="Images/aboutUsimg.jpg"></img>
+    </div>
+    <div class="aboutUsSection-right">
+        <h1 class="aboutUsTitle">About Us</h1>
+        <div class="aboutUsDescription">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit adipisci laudantium aspernatur id incidunt ducimus veritatis sint nihil consectetur! Voluptates quam aliquid nostrum, id labore iusto. Eum sequi voluptatibus tempore?</p>
+          <br />
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident ratione quod adipisci nisi, temporibus aut, fuga, soluta repellendus cumque fugiat sunt debitis voluptates non hic! Magnam eaque beatae veritatis tempore.</p>
+          <br />
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, cumque iure nemo distinctio neque repellendus architecto! Quidem amet perferendis asperiores vero distinctio autem, sapiente dignissimos impedit voluptatibus omnis delectus veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel cumque placeat qui incidunt temporibus, vero optio atque quibusdam quasi, debitis impedit dicta, exercitationem corporis et eaque rerum tenetur facilis ea.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contactUsSection">
+    <h1 class="contactUsTitle">Contact Us</h1>
+    <form>
+      <div class="contactUsForm">
+        <h2 class="formTitle">Sent us a message.</h2>
+        <div class="row">
+          <label for="firstName" class="left-side">First Name: </label>
+          <input type="text" class="right-side">
+        </div>
+        <div class="row">
+          <label for="lastName" class="left-side">Last Name: </label>
+          <input type="text" class="right-side"/>
+        </div>
+        <div class="row">
+          <label for="email" class="left-side">E-mail: </label>
+          <input type="text" class="right-side"/>
+        </div>
+        <div class="row">
+          <label for="textMessage" class="left-side">Message: </label>
+          <textarea name="textMessage" id="" cols="30" rows="10" class="right-side"></textarea>
+        </div>
+        <div class="submitButton">
+          <input id="submitButton" type="submit" value="Send">
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Headquarters Section -->
+  <section class="headquartersSection">
+    <h1 class="headquartersTitle">Headquarters</h1>
+    <div id='myMap'></div>
+  </section>
+
+  <div class="breakLine"><hr /></div>
+
+  <!-- Footer Section -->
+  <footer class="footerSection">
+    <div class="footerSection-left">
+      <div>
+      <h2>Eduardo Translations</h2>
+      <br>
+      <p>info@example.com</p>
+      <p>+503 XXXX-XXXX</p>
+      </div>
+    </div>
+    <div class="footerSection-right">
+      <p>"We pride ourselves on serving and providing language solutions."</p>
+    </div>
+  </footer>
+
+</body>
+</html>

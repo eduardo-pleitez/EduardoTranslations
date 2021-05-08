@@ -1,0 +1,421 @@
+/* Body Reset */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html, body{
+  height:100%;
+}
+body{
+  background-color: white;
+}
+
+/* Top bar styles */
+.topBar{
+  background-color: #004274;
+  display: flex;
+  height: 70px;
+}
+.left{
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.center{
+  flex: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right{
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left .webName {
+  font-size: 14px;
+  color: white;
+  padding: 14px 10px;
+  text-decoration: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.dropdown .dropdownButton{
+  background-color:  #004274;
+  padding: 14px 18px;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.dropdown .dropdownContainer{
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  min-width: 160px;
+  overflow: auto;
+}
+.dropdownContainer a{
+  float: none;
+  display: block;
+  padding: 14px 18px;
+  color: white;
+  background-color:  #004274;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.arrow-down{
+  display: inline-block;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  margin-left: 10px;
+  transform: rotate(45deg);
+}
+.topBar .individual{
+  padding:14px 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.languageButton {
+  background-color:  #004274;
+  padding: 14px 18px;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.dropdown:hover .dropdownContainer{
+  display: block;
+  border: 1px solid white;
+}
+.dropdown:hover .dropdownButton{
+  background-color: #d55b01;
+}
+.topBar .individual:hover, .dropdownContainer a:hover{
+  background-color: #d55b01;
+}
+.languageButton:hover, .webName:hover{
+  background-color: #d55b01;
+}
+
+
+/*Main Content Styles*/
+.mainPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("Images/book1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+.mainPage h1{
+color: white;
+font-size: 48px;
+margin-top: 30px;
+font-weight: bold; 
+padding: 12px 16px;
+background-color: #d55b01; 
+}
+.topBar + .mainPage{
+  height: 100%;
+}
+
+/* Services Section Styles*/
+.servicesSection{
+  width: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.servicesSection .servicesTitle{
+  color:  #004274;
+  margin: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+}
+.servicesSection .servicesTabs{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.servicesTabs .tab{
+  background-color: #004274;
+  padding: 5px;
+  margin: 20px;
+  height: 400px;
+  width: 325px;
+  transition: 0.4s ease;
+  box-shadow: 10px 10px 5px grey;
+}
+.tab .tabTitle{
+  color: white ;
+  text-align: center;
+  border-bottom: 5px solid #d55b01;
+  font-size: 30px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.tab .tabParagraph{
+  color: white;
+  margin-top: 35px;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.servicesTabs div:hover{
+  transform: scale(1.05);
+}
+
+
+/* Language Pairs Section */
+#languagePairsSection {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 30px;
+  background-color: #004274;
+  padding-bottom: 80px;
+  height: 500px;
+}
+#languagePairsSection .languagePairsTitle{
+  color:  white;
+  margin: 25px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+}
+#languagePairsSection p{
+  color: white;
+  margin: 40px 40px;
+}
+.languagePairsRow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.flagLine{
+  display: flex;
+  padding: 30px;
+}
+.flagLine span{
+  align-self: center;
+  font-size: 30px;
+  color: white;
+  padding: 0 20px;
+}
+.flagLine img{
+  height: 40px;
+  width: 60px;
+}
+
+/* Industries Section */
+.industriesSection{
+  width: 100%;
+  padding-top: 30px;
+  overflow: hidden;
+  padding-bottom: 80px;
+  height: 500px;
+}
+.industriesSection .industriesTitle{
+  color:  #004274;
+  margin: 25px;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.industriesTags{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+.industriesTags div{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 15%;
+  margin: 20px;
+  background-color: #004274;
+  color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px grey;
+  transition: 0.4s;
+}
+.industriesTags i{
+ font-size: 48px;
+}
+.industriesTags h2{
+  font-size: 12px;
+  padding: 10px;
+ }
+ .industriesTags div:hover {
+  background-color: #d55b01;
+  transform: scale(1.05);
+ }
+
+ /* About Us Section */
+#aboutUsSection{
+  display: flex;
+}
+.aboutUsSection-left{
+  flex: 50%;
+}
+.aboutUsSection-left img{
+  width: 100%;
+  height: 600px;
+}
+.aboutUsSection-right{
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #004274;
+  padding-left: 20px;
+  height: 600px;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+.aboutUsSection-right .aboutUsTitle{
+  font-size: 48px;
+  color:  white;
+  margin: 25px;
+  font-weight: bold;
+}
+.aboutUsSection-right .aboutUsDescription{
+  color: white;
+  margin: 25px;
+}
+
+/* Contact Section */
+#contactUsSection{
+  padding: 30px;
+  padding-bottom: 50px;
+}
+#contactUsSection .contactUsTitle{
+  font-size: 48px;
+  font-weight: bold;
+  margin: 25px;
+  color: #004274;
+  text-align: center;
+}
+.contactUsForm{
+  border-radius: 15px;
+  background-color: #004274;
+  padding: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contactUsForm .formTitle{
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+.row{
+  display: flex;
+}
+.row label{
+  flex: 15%;
+  margin-top: 15px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+.row input, .row textarea{
+  flex: 80%;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #004274;
+  padding: 5px;
+}
+input:focus, textArea:focus{
+ border: 2px solid #d55b01;
+}
+.submitButton{
+  display: flex;
+  width: 20%;
+  margin-left: 80%;
+}
+.submitButton input[type="submit"]{
+  flex: 20%;
+  margin-top: 15px;
+  padding: 16px;
+  font-weight: bold;
+  background-color: #d55b01;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Headquarters Section */
+.headquartersSection{
+background-color: #004274;
+padding: 60px;
+}
+.headquartersSection .headquartersTitle{
+font-size: 48px;
+color:  white;
+text-align: center;
+margin-bottom: 50px;
+font-weight: bold;
+}
+#myMap{
+  width: 80%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.breakLine{
+  background-color: #004274;
+  display: flex;
+  justify-content: center;
+}
+.breakLine hr{
+  width: 80%;
+  color: white;
+}
+
+/* Footer */
+.footerSection{
+  background-color: #004274;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+.footerSection-left{
+ flex: 30%;
+ display: flex;
+ justify-content: center;
+}
+.footerSection-right{
+ flex: 70%;
+ display: flex;
+ justify-content: center;
+ font-size: 16px;
+ font-weight: bold;
+}
