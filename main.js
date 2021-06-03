@@ -1,6 +1,6 @@
+/* Prevent submit */
 let submitbtn = document.getElementById("submitButton");
 submitbtn.addEventListener("click", function(event){ event.preventDefault(); });
-submitbtn.addEventListener("click", function(){ alert("The website is under construction") });
 
 
 /* Add Map with MapBox */

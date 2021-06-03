@@ -12,33 +12,28 @@ body{
   background-color: #004274;
 }
 
-/* Top Bar Styles */
+/* Desktop design */
+@media screen and (min-width:1200px) {
+/* Top bar styles */
 .topBar{
   background-color: #004274;
   display: flex;
   height: 70px;
-  z-index: 99;
   border-bottom: 2px solid white;
 }
-.left{
+.row-left{
   flex: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.center{
-  flex: 60%;
+#row-center{
+  flex: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.right{
-  flex: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.left .webName {
+.row-left .webName {
   font-size: 14px;
   color: white;
   padding: 14px 10px;
@@ -46,6 +41,12 @@ body{
   outline: none;
   transition: 0.4s;
   font-weight: bold;
+}
+.row-left #hamburguerIcon{
+  display: none;
+}
+.dropdown{
+  position: relative;
 }
 .dropdown .dropdownButton{
   background-color:  #004274;
@@ -92,17 +93,6 @@ body{
   font-weight: bold;
   transition: 0.4s;
 }
-.languageButton {
-  background-color:  #004274;
-  padding: 14px 18px;
-  color: white;
-  outline: none;
-  border: none;
-  font-weight: bold;
-  font-size: 14px;
-  transition: 0.4s;
-  cursor: pointer;
-}
 .dropdown:hover .dropdownContainer{
   display: block;
   border: 1px solid white;
@@ -113,9 +103,10 @@ body{
 .topBar .individual:hover, .dropdownContainer a:hover{
   background-color: #d55b01;
 }
-.languageButton:hover, .webName:hover{
+.webName:hover{
   background-color: #d55b01;
 }
+
 
 /* Submenu Tab */
 .submenuTab{
@@ -130,4 +121,126 @@ body{
 .tabDescription{
   margin: 40px;
   font-size: 16px;
+}
+}
+
+/* Mobile design */
+@media screen and (max-width:1199px){
+/* Top bar styles */
+.topBar{
+  background-color: #004274;
+  display: flex;
+  flex-direction: column;
+}
+.row-left{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+}
+#row-center{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+.row-left .webName {
+  display: inline-block;
+  font-size: 15px;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  outline: none;
+  transition: 0.4s;
+  font-weight: bold;
+}
+.row-left #hamburguerIcon{
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+  padding: 10px 15px;
+}
+.dropdown{
+  display: block;
+  width: 100%;
+}
+.dropdown .dropdownButton{
+  display: block;
+  width: 100%;
+  background-color:  #004274;
+  padding: 10px 18px;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.dropdown .dropdownContainer{
+  display: none;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  overflow: auto;
+  border: 1px solid white;
+}
+.dropdownContainer a{
+  float: none;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 10px 18px;
+  color: white;
+  background-color:  #004274;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.arrow-down{
+  float: right;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+  transform: rotate(45deg);
+}
+.topBar .individual{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding:10px 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.dropdown:hover .dropdownButton{
+  background-color: #d55b01;
+}
+.dropdown:hover .dropdownContainer{
+  display: block;
+  border: 1px solid white;
+}
+.topBar .individual:hover, .dropdownContainer a:hover{
+  background-color: #d55b01;
+}
+.webName:hover, #hamburguerIcon:hover{
+  background-color: #d55b01;
+}
+
+.submenuTab{
+  margin: 20px;
+  color: white;
+}
+.tabTitle{
+  margin: 20px;
+  font-size: 15px;
+  border-bottom: 5px solid #d55b01;
+}
+.tabDescription{
+  margin: 20px;
+  font-size: 10px;
+}
+
 }

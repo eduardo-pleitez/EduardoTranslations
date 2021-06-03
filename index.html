@@ -15,28 +15,30 @@
   <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
   <script src="main.js" defer></script>
+  <script src="responsive.js" defer></script>
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <nav class="topBar">
-    <div class="row left">
+    <div class="row-left">
       <a href="index.html" class="webName" role="button" tabindex="0">Eduardo Translations</a>
+      <a href="javascript:void(0);" id="hamburguerIcon" type="button"><i class="fa fa-bars"></i></a>
     </div>
-    <div class="row center">
-      <div class="dropdown" role="button" tabindex="0">
+    <div id="row-center">
+      <div class="dropdown" id="drop1" role="button" tabindex="0">
         <button type="button" class="dropdownButton" id="changeServicesButton">Services
         <i class="arrow-down"></i></button>
-        <div class="dropdownContainer">
+        <div class="dropdownContainer" id="container1">
           <a href="Sections/translation.html">Translation</a>
           <a href="Sections/transcription.html">Transcription</a>
           <a href="Sections/interpretation.html">Interpretation</a>
         </div> 
       </div>
       <a href="#languagePairsSection" class="individual">Language Pairs</a>
-      <div class="dropdown" role="button" tabindex="0">
+      <div class="dropdown" id="drop2" role="button" tabindex="0">
         <button type="button" class="dropdownButton">Industries  <i class="arrow-down"></i></button>
-        <div class="dropdownContainer">
+        <div class="dropdownContainer" id="container2">
           <a href="Sections/finance.html">Finance</a>
           <a href="Sections/medical.html">Medical</a>
           <a href="Sections/marketing.html">Marketing</a>
@@ -44,11 +46,6 @@
       </div>
       <a href="#aboutUsSection" class="individual">About Us</a>
       <a href="#contactUsSection" class="individual">Contact Us</a>
-    </div>
-    <div class="row right">
-      <!--<a href="#">
-      <button type="button" class="languageButton" id="languageChange" onclick="changeLanguage()" title="Es">En</button>
-      </a> -->
     </div>
   </nav>
 
@@ -142,9 +139,7 @@
           <label for="textMessage" class="left-side">Message: </label>
           <textarea name="textMessage" id="" cols="30" rows="10" class="right-side"></textarea>
         </div>
-        <div class="submitButton">
-          <input id="submitButton" type="submit" value="Send">
-        </div>
+        <button id="submitButton" type="submit">Send</button>
       </div>
     </form>
   </section>
@@ -171,8 +166,6 @@
       <p>"We pride ourselves on serving and providing language solutions."</p>
     </div>
   </footer>
-  <script>
-    alert(screen.availWidth);
-  </script>
+  
 </body>
 </html>
